@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  display: flex;
+
+  align-items: center;
+  gap: 10%;
+  height: 100vh;
+}
+
+.image-container {
+  position: relative;
+  flex-basis: 40%;
+
+  padding: 5rem;
+}
+.umbrella-img {
+  width: 100%;
+  height: auto;
+}
+
+.data-container {
+}
+.h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.color-box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+#input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.logo-label {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  border: 1px solid black;
+}
+#upload {
+  height: 15px;
+  color: white;
+}
+.upload-text {
+  display: inline-block;
+  margin-left: 100px;
+}
+#img-loader {
+  position: absolute;
+  display: none;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.loader-svg {
+  position: absolute;
+  top: 40%;
+  left: 49%;
+  fill: darkgoldenrod;
+  animation: rotate 2s infinite;
+}
+@keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#uploaded-logo {
+  position: absolute;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  display: none;
+
+  bottom: 125px;
+  left: 275px;
+}
+.upload-loader {
+  display: none;
+  fill: darkgoldenrod;
+  animation: rotate 2s infinite;
+  height: 15px;
+}
